@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """python file that contain the variables annotated with the specified types"""
 
 a: int = 1
