@@ -1,7 +1,8 @@
+from typing import Callable
 """make_multiplier Module"""
 
 
-def make_multiplier(multiplier: float) -> callable:
+def make_multiplier(multiplier: float) -> Callable:
     """make_multiplier: takes a float multiplier and returns a function that
     multiplies a float by multiplier
     Args:

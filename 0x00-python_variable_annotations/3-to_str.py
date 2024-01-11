@@ -2,7 +2,8 @@
 
 
 def to_str(n: float) -> str:
-    """to_str: takes a float n and returns the string representation of the float
+    """
+    to_str: takes a float n and returns the string representation of the float
     Args:
         n (float): float to be converted to string
     Returns:

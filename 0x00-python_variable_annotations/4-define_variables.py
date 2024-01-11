@@ -1,4 +1,4 @@
-"""python file that contains the variables annotated with the specified types"""
+"""python file that contain the variables annotated with the specified types"""
 
 a: int = 1
 pi: float = 3.14
