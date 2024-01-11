@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from typing import List, Tuple, Union
 """zoom_array module"""
+from typing import List, Tuple, Union
 
 
 def zoom_array(lst: List, factor: Union[int, float] = 2) -> List:
