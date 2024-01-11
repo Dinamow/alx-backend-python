@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from typing import Callable
 """make_multiplier Module"""
 

@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from typing import Any, Sequence, Union
 """safe_first_element module"""
 

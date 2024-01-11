@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from typing import List, Union
 """sum_mixed_list module file"""
 

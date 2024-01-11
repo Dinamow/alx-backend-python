@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from typing import List
 """sum a list of floats"""
 

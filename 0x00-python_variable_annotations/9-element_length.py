@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from typing import List, Tuple, Iterable, Sequence
 """element_length module"""
 
