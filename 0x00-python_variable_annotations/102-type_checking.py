@@ -3,11 +3,11 @@
 from typing import List, Tuple, Union
 
 
-def zoom_array(lst: List, factor: Union[int, float] = 2) -> List:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """zoom_array: zoom array
     Args:
-        lst: List
-        factor: Union[int, float] = 2
+        lst: tuple
+        factor: int = 2
     Return:
         List"""
     zoomed_in: List = [
@@ -17,8 +17,8 @@ def zoom_array(lst: List, factor: Union[int, float] = 2) -> List:
     return zoomed_in
 
 
-array = [12, 72, 91]
+array = (12, 72, 91)
 
 zoom_2x = zoom_array(array)
 
-zoom_3x = zoom_array(array, 3.0)
+zoom_3x = zoom_array(array, 3)
