@@ -4,7 +4,7 @@ import asyncio
 import time
 
 
-async_generator = __import__('0-async_generator').async_generator
+async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
 async def measure_runtime() -> float:
@@ -14,6 +14,6 @@ async def measure_runtime() -> float:
         float: [description]
     """
     start_time = time.time()
-    await asyncio.gather(*(async_generator() for i in range(4)))
+    await asyncio.gather(*(async_comprehension() for i in range(4)))
     end_time = time.time()
     return end_time - start_time
