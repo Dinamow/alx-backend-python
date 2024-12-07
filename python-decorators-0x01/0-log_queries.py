@@ -5,6 +5,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 
+
 #### decorator to lof SQL queries
 def log_queries(func):
     """
@@ -18,15 +19,17 @@ def log_queries(func):
     :return: A new function that logs the query before executing the
         original function.
     """
+
     @functools.wraps(func)
     def wrapper(*args, **kwargs):
-        query = kwargs.get('query') or args[0]
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        query = kwargs.get("query") or args[0]
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         if query:
             logging.info(f"[{timestamp}] Executing SQL Query: {query}")
         else:
             logging.info(f"[{timestamp}] No SQL Query Provided")
         return func(*args, **kwargs)
+
     return wrapper
 
 
@@ -43,12 +46,13 @@ def fetch_all_users(query):
         positional argument is used.
     :return: The results of the query.
     """
-    conn = sqlite3.connect('users.db')
+    conn = sqlite3.connect("users.db")
     cursor = conn.cursor()
     cursor.execute(query)
     results = cursor.fetchall()
     conn.close()
     return results
+
 
 #### fetch users while logging the query
 users = fetch_all_users(query="SELECT * FROM users")
